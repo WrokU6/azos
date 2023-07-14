@@ -1,0 +1,12 @@
+sv = azos.server/drivers/graphicdriver1.azosdriver
+server.sv.download
+
+driver.BG.color3 = color3.gray
+
+:1:
+IF driver.BG.color3 = color3.gray THEN
+	server.sv.disconnect
+ELSE
+	server.sv.disconnect
+	server.sv.connect
+	loop :1:
